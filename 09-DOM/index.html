@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .highlight {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. What is DOM? -->
+    <h1>1. What is DOM?</h1>
+    <h1 id="heading">Hello World</h1>
+    <hr>
+
+    <!-- 2. Selecting HTML Elements -->
+    <h1>2. Selecting HTML Elements</h1>
+
+    <!-- 1. getElementById() -->
+    <h2 id="title">This is a title</h2>
+
+    <!-- 2. getElementsByClassName() -->
+    <div class="box">this is a box</div>
+    <div class="box">this is another box</div>
+
+    <!-- 3. querySelector() -->
+    <h2 id="second-title">This is a second title</h2>
+    <div class="second-box">this is a second box</div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam a commodi veritatis deserunt dicta. Neque
+        fugiat architecto delectus? Saepe laborum eaque sapiente laudantium molestias dolorem cumque quod fuga
+        consequatur porro! Dolore expedita non consequuntur voluptates dolor est corrupti dignissimos, aperiam qui
+        possimus impedit obcaecati officiis laboriosam temporibus explicabo illo dolorum ea voluptate quam veniam,
+        delectus minus perspiciatis quod similique! Dolore quidem quae iusto officiis voluptatum enim ipsum a porro,
+        saepe amet laudantium perferendis, ab voluptas odit? Eum, magnam harum atque voluptas fugiat ut beatae
+        molestias, nihil nisi deserunt mollitia aliquid. Provident voluptatem amet earum maxime eligendi ex ad iure
+        asperiores!</p>
+
+    <!-- 4. querySelectorAll() -->
+    <div class="all-boxes">this is a third box</div>
+    <div class="all-boxes">this is a fourth box</div>
+    <div class="all-boxes">this is a fifth box</div>
+    <hr>
+
+
+    <!-- 3. Text and Content Access -->
+    <h1>3. Text and Content Access</h1>
+
+    <!-- innerText -->
+    <h2 id="inner-text">changing inner text.</h2>
+
+    <!-- textContent -->
+    <h2 id="text-content">changing text content.</h2>
+
+    <!-- innerHTML -->
+    <h2 id="inner-html">changing inner HTML.</h2>
+    <hr>
+
+
+    <!-- 4. Attribute Manipulation -->
+    <h1>4. Attribute Manipulation</h1>
+    <a id="link" target="_blank" rel="noopener noreferrer" href="https://example.com">Visit</a>
+    <hr>
+
+
+    <!-- 5. Dynamic DOM Manipulation -->
+    <h1>5. Dynamic DOM Manipulation</h1>
+    <p id="remove">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus aperiam ea sint nihil ad vitae
+        dolorum minima provident ratione quam, fuga quibusdam in sequi! Voluptas id neque laborum quo. Neque, maiores
+        ipsam iste, sed cupiditate aliquid, dolorem iure ut deleniti voluptatem numquam molestiae perferendis eveniet
+        quam recusandae consectetur eius provident!</p>
+    <hr>
+
+
+    <!-- 6. Style Manipulation -->
+    <h1>6. Style Manipulation</h1>
+    <div id="style-div">This is a div with dynamic styles.</div>
+    <p id="style-para">styling in this paragraph applies through class list.</p>
+    <hr>
+
+    <script src="1_script.js"></script>
+</body>
+
+</html>
