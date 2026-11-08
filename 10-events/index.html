@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <style>
+        .output {
+            color: green;
+            min-height: 1.5em;
+        }
+
+        .initial {
+            border: 1px solid #444;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            font-family: serif;
+        }
+
+        .mouse-over-event {
+            color: white;
+            border: 2px solid black;
+            font-size: 30px;
+            font-family: cursive;
+            border-radius: 20px;
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+        }
+
+        .list-cls {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. What are Events? -->
+    <section class="topic">
+        <h1 id="what-are-events">1. What are Events?</h1>
+        <button id="btn-1">Click here to know about events</button>
+        <p id="answer-1" class="output"></p>
+    </section>
+    <hr>
+
+
+    <!-- 2. Event Binding -->
+    <section class="topic">
+        <h1 id="event-binding">2. Event Binding</h1>
+
+        <!-- addEventListener() -->
+        <h2 id="add-event-listener">addEventListener</h2>
+        <button id="add-event">Click here to see addEventListener</button>
+        <p id="add-event-output" class="output"></p>
+
+        <!-- removeEventListener() -->
+        <h2 id="remove-event-listener">removeEventListener</h2>
+        <button id="click-demo-button">Click me</button>
+        <button id="remove-listener-button">Remove the listener</button>
+        <p id="remove-listener-output" class="output"></p>
+    </section>
+    <hr>
+
+
+    <!-- 3. Common JavaScript events -->
+    <section class="topic">
+        <h1 id="commmon-events">3. Common JavaScript Events</h1>
+
+        <!-- a. Click Event -->
+        <h2 class="events">Click Event</h2>
+        <button id="click-event">click event button</button>
+        <p id="click-event-output" class="output"></p>
+
+        <!-- b. Input Event -->
+        <h2 class="events">Input Event</h2>
+        <input type="text" id="input-event" placeholder="type here">
+        <p id="input-event-output" class="output"></p>
+
+        <!-- c. Change Event -->
+        <h2 class="events">Change Event</h2>
+        <select id="change-event">
+            <option selected disabled>Select value</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+        <p id="change-event-output" class="output"></p>
+
+        <!-- d. Submit Event -->
+        <h2 class="events">Submit Event</h2>
+        <form id="submit-event-form">
+            <input type="text" id="submit-event-input" placeholder="Enter your name" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="submit-event-output" class="output"></p>
+
+        <!-- e. Mouse-over Event & Mouse-out Event-->
+        <h2 class="events">Mouse-over Event & Mouse-out-Event</h2>
+        <div id="mouse-over-event" class="initial">
+            Move your mouse over me
+        </div>
+        <p id="mouse-over-output" class="output"></p>
+    </section>
+    <hr>
+
+
+    <!-- 4. Event object -->
+    <section class="topic">
+        <h1 id="event-object">4. Event object</h1>
+
+        <!-- a. event.target -->
+        <h2>event.target</h2>
+        <button id="target-btn">click here</button>
+        <p class="output" id="event-target-output">click the button to see target value & type value</p>
+
+    </section>
+    <hr>
+
+    <!-- 5. Event Bubbling and Capturing -->
+    <section class="topic">
+        <h1 id="Event_Bubbling_and_Capturing">5. Event Bubbling and Capturing</h1>
+
+        <!-- a. Event Bubbling -->
+        <h2>Event Bubbling</h2>
+        <div id="parent">
+            parent <br> <br>
+            <button id="child">Click-me</button>
+        </div>
+
+    </section>
+    <hr>
+
+    <!-- 6. Event Delegation -->
+    <section class="topic">
+        <h1 id="Event-Delegation">6. Event Delegation</h1>
+
+        <!-- Event Delegation -->
+        <h2>Event Delegation</h2>
+        <ul id="list">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
