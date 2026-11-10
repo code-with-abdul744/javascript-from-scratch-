@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms JavaScript</title>
+</head>
+
+<body>
+
+    <input type="text" id="username" placeholder="Enter name">
+    <button id="btn">Submit</button>
+    <br><br>
+
+
+    <textarea id="message" placeholder="Enter your message"></textarea>
+    <button id="btn2">Submit</button>
+    <br><br>
+
+
+    <select id="course">
+        <option value="c++">C++</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+    </select>
+
+    <button id="btn3">Submit</button>
+    <br><br>
+
+
+    <form id="myForm">
+        <input type="text" placeholder="Enter name">
+        <button type="submit">Submit</button>
+    </form>
+    <br><br>
+
+
+    <form id="registrationForm">
+        <input type="text" placeholder="Enter name" required minlength="3">
+
+        <input type="email" placeholder="Enter email" required>
+
+        <input type="password" placeholder="Enter password" required minlength="8">
+
+        <button type="submit">Register</button>
+    </form>
+    <br><br>
+
+
+    <form id="myForm2">
+        <input type="text" id="username2" placeholder="Enter username">
+        <p id="error"></p>
+        <button type="submit">Submit</button>
+    </form>
+    <br><br>
+
+
+    <input type="email" id="email2" placeholder="Enter email">
+    <p id="error2"></p>
+    <br><br>
+
+
+    <form id="phoneForm">
+        <input type="text" pattern="[0-9]{10}" placeholder="Enter 10 digit number" required>
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
